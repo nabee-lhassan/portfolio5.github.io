@@ -52,9 +52,9 @@ window.addEventListener("mousemove", function(e) {
 
 })
 
-window.addEventListener("mouseleave", function(e) {
+document.addEventListener("mouseleave", function(e) {
 
-    document.querySelector(".cursor-effect").style.display = "none !important";
+    document.querySelector(".cursor-effect").style.display = "none ";
     
 
 })
@@ -80,9 +80,9 @@ document.querySelector(".heading-last-name").style.left = (e.x * 0.02) + "px";
 document.querySelector(".heading-last-name").style.top = (e.y * 0.02) + "px";
 
 
-document.querySelector(".inner-cursor").style.transform = "scale(1.5)";
-document.querySelector(".inner-cursor").style.opacity = "1";
-document.querySelector(".cursor-effect").style.zIndex = "-1";
+// document.querySelector(".inner-cursor").style.transform = "scale(1.5)";
+// document.querySelector(".inner-cursor").style.opacity = "1";
+// document.querySelector(".cursor-effect").style.zIndex = "-1";
 
 
 

@@ -673,452 +673,92 @@ z-index: 1;
 /* ***************** second section  ****************** */
 
 
-
 .sec-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    background-color: rgb(0, 0, 0);
     width: 100vw;
-    height:100vh;
-    background-color: black;
-}
-
-.sec-2 .colum-1{
-    /* background-color: rgb(255, 255, 255); */
-    width: 25%;
-    height: 89%;
-}
-
-.sec-2 .colum-1  .div-main-folder{
-
-    padding: 5% 10%;
-
-
-}
-
-.sec-2 .colum-1 .div-folder{
-
-    background-color: rgb(54, 54, 54);
-width: 100%;
-color: white;
+    height: 100vh;
 position: relative;
-
-padding: 6% 3%;
-height: 39px;
 overflow: hidden;
-transition: 0s;
-
 }
 
-.sec-2 .colum-1 .div-folder:hover{
-  
-    height: 100%;
-}
-
-
-.sec-2 .colum-1 .div-folder .div-title {
-    color: white;
-    letter-spacing: 4px;
+.sec-2 .div-top{
     
-    padding: 2% 2%;
-    border-bottom: 1px solid #ffffff69;
-}
-
-.sec-2 .colum-1 .div-folder .div-content  {
-
-    padding: 5% 0%;
-
-}
-.sec-2 .colum-1 .div-folder .div-content ul {
-
-    list-style: auto;
-    margin-left: 12px;
-
-
-}
-
-
-
-
-/* .sec-2 .colum-1 .div-folder::before{
-
-    background-color: rgb(54, 54, 54);
-width: 30%;
-height:35px;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 50vh;
 position: absolute;
-content: "";
-top: -35px;
-left: 0%;
-border-radius: 10px 10px 0px 0px;
-
-} */
-
-.sec-2 .colum-2{
-    /* background-color: rgb(255, 255, 255); */
-    width: 25%;
-    height: 89%;
-}
-
-.sec-2 .my-container{
-    width: 50%;
-    height: 90%;
-    display: flex;
+top: 0%;
+overflow: hidden;
+display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-color: black;
-    z-index: 1;
+    align-items: end;
 }
 
-.sec-2 .div-main-2{
+
+.sec-2 .div-top .div-text{
     
-width: 98%;
-height: 95%;
-    background-image: url(./image/nasa-pd4lo70LdbI-unsplash.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    font-size: 100px;
+    margin: 0% 0% -4% 0%;;
     
-border: 10px solid white ;
-z-index: 0;
+    /* position: absolute;
+    top: 49%;
+    left: 25%;
+    transform: translate(25%, 25%); */
+
+}
+
+
+
+.sec-2 .div-center{
+    
+    background-color: rgb(8, 8, 8);
+    width: 100vw;
+    height: 100vh;
+}
+
+.sec-2 .div-bottom{
+    
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 50vh;
+position: absolute;
+bottom: 0%;
+overflow: hidden;
+display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+
+.sec-2 .div-bottom .div-text{
+    font-size: 100px;
+margin: -5% 0% 0% 0%;;
+
+
+    /* position: absolute;
+    bottom: 65%;
+    left: 25%;
+    transform: translate(25%, 25%); */
+
+}
+
+
+@media only screen and (max-width: 1366px) {
    
-  
-}
+    .sec-2 .div-top .div-text{
+    
+        margin: 0% 0% -4.5% 0%;;
+          
+    }    
 
 
-.bg-anim{
-background-position: right;
-
-    animation-name: bg-anim;
-    animation-duration: 6s;
-    animation-fill-mode: both;
-    animation-delay: 0s;
-overflow: hidden;
-display: none;
-cursor: context-menu;
-
-}
-
-@keyframes bg-anim {
+    .sec-2 .div-bottom .div-text{
+    margin: -5% 0% 0% 0%;;
     
-    0%{
-       
-        transform: translate(100%, 0%);
-        
-    }
-    
-    20%{
-       
-        transform: translate(100%, 0%);
-        
-    }
-    
-    40%{
-       
-       
-        transform: translate(0%, 0%);
-        background-position: right;
-    }
-    60%{
-        
-        
-        
-    }
-    
-    80%{
-        
-        background-position: center;
-        
-    }
-    
-    100%{
-        background-position: center;
-       
-        
     }
 
-}
 
+  }
 
-.div-moon{
-
-    width: 50px;
-    height: 50px;
-    background-image: url(./image/GztY49M\ \(1\).gif);
-    background-size: cover;
-    border-radius: 100%;
-    position: absolute;
-    transition: 0.1s;
-display: none;
-z-index: 5;
-}
-
-.sec-2 .div-main-2 .layer{
-    
-width: 100%;
-height: 20%;
-border-top: 1px solid rgb(255, 255, 255);
-/* border-bottom: 1px solid white; */
-margin: 0% 0%;
-position: relative;
-  
-}
-
-
-
-.sec-2 .div-main-2 .layer::after{
-position: absolute;
-content: "";
-width: 100%;
-height: 100%;
-background-color: white;
-
-
-}
-
-.sec-2 .div-main-2 .l-1::after{
-
-    left: 10%;
-
-    animation-name: l-1;
-    animation-duration: 1.5s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
-    
-}
-
-
-@keyframes l-1 {
-
-    0%{left: 0%;}
-
-
-    100%{left: 100%;}
-    
-}
-
-
-.sec-2 .div-main-2 .l-2::after{
-
-    left: 10%;
-
-    animation-name: l-2;
-    animation-duration: 2.5s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
-    
-}
-
-
-@keyframes l-2 {
-
-    0%{left: 0%;}
-
-
-    100%{left: 100%;}
-    
-}
-
-
-
-
-.sec-2 .div-main-2 .l-3::after{
-
-    left: 10%;
-
-    animation-name: l-3;
-    animation-duration: 3.5s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
-    
-}
-
-
-@keyframes l-3 {
-
-    0%{left: 0%;}
-
-
-    100%{left: 100%;}
-    
-}
-
-.sec-2 .div-main-2 .l-3 .inner-layer{
-    position: absolute;
-
-    display: flex;
-    align-items: center;
-    padding: 0% 3%;
-    color: black;
-    width: fit-content;
-    height: 100%;
-    font-size: 100px;
-    background-color:white;
-    mix-blend-mode: lighten;
-    left: -100%;
-    
-
-    animation-name: l-3-b;
-    animation-duration: 1.5s;
-    animation-delay: 3s;
-    animation-fill-mode: both;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    
-}
-
-
-
-@keyframes l-3-b {
-
-    0%{left: -100%;}
-
-
-    100%{left: 0%;}
-    
-}
-
-
-.sec-2 .div-main-2 .l-4::after{
-
-    left: 10%;
-
-    animation-name: l-4;
-    animation-duration: 4.5s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
-    
-}
-
-
-@keyframes l-4 {
-
-    0%{left: 0%;}
-
-
-    100%{left: 100%;}
-    
-}
-
-
-.sec-2 .div-main-2 .l-4 .inner-layer{
-    position: absolute;
-
-    display: flex;
-    align-items: center;
-    padding: 0% 3%;
-    color:black;
-    width: fit-content;
-    height: 100%;
-    font-size: 100px;
-    background-color:white;
-    mix-blend-mode: lighten;
-    left: -100%;
-    
-
-    animation-name: l-4-b;
-    animation-duration: 2.5s;
-    animation-delay: 3s;
-    animation-fill-mode: both;
-
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:black;
-    
-}
-
-
-@keyframes l-4-b {
-
-    0%{left: -100%;}
-
-
-    100%{left: 0%;}
-    
-}
-
-
-.sec-2 .div-main-2 .l-5::after{
-
-    left: 10%;
-    
-
-    animation-name: l-5;
-    animation-duration: 5.5s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
-    
-}
-
-
-@keyframes l-5 {
-
-    0%{left: 0%;}
-
-
-    100%{left: 100%;}
-    
-}
-
-
-.sec-2 .div-main-2 .l-5 .inner-layer{
-    position: absolute;
-    mix-blend-mode: lighten;
-    display: flex;
-    align-items: center;
-    padding: 0% 3%;
-    color: black;
-    
-    width: fit-content;
-    height: 100%;
-    font-size: 100px;
-    background-color:white;
-    text-transform: uppercase;
-    left: -100%;
-    
-
-    animation-name: l-5-b;
-    animation-duration: 3.5s;
-    animation-delay: 3s;
-    animation-fill-mode: both;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    
-}
-
-
-@keyframes l-5-b {
-
-    0%{left: -100%;}
-
-
-    100%{left: 0%;}
-    
-}
-
-
-
-
-
-
-
-.sec-2 .div-main-2 .layer .layer-one{
-
-    animation-name: layer-one;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 0;
-  
-}
-
-
-
-/* ******************  section three   **************** */
-
-
-.sec-3 {
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-    width: 100%;
-    height: 500vh;
-}
 
