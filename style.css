@@ -3,13 +3,13 @@
 .cursor-effect{
     width: 10px;
     height: 10px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 100%;
     position: fixed;
     /* transition: all linear  0.1s;  */
     z-index: 0;
     box-shadow: 0px 0px 48px 15px white;
-    
+    mix-blend-mode: difference;
     display: none;
 }
 
@@ -19,9 +19,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Bebas Neue', sans-serif;
-    
+    cursor: context-menu;
    
 }
+
+
+
 
 
 .fixed-element{
@@ -682,6 +685,20 @@ position: relative;
 overflow: hidden;
 }
 
+.cursor-effect-2{
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    position: fixed;
+    /* transition: all linear  0.1s;  */
+    z-index: 99;
+    box-shadow: 0px 0px 48px 15px rgb(0, 0, 0);
+    mix-blend-mode: difference;
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
 .sec-2 .div-top{
     
     background-color: rgb(255, 255, 255);
@@ -697,9 +714,13 @@ display: flex;
 
 
 .sec-2 .div-top .div-text{
-    
-    font-size: 100px;
-    margin: 0% 0% -4% 0%;;
+    font-size: 200px;
+    position: absolute;
+    top: 16%;
+    color: black;
+    /* left: 50%;
+    transform: translate(50%, 50%); */
+    /* margin: 0% 0% -4% 0%;; */
     
     /* position: absolute;
     top: 49%;
@@ -732,8 +753,13 @@ display: flex;
 
 
 .sec-2 .div-bottom .div-text{
-    font-size: 100px;
-margin: -5% 0% 0% 0%;;
+    font-size: 200px;
+    position: absolute;
+    bottom: 16%;
+    color: black;
+    /* left: 50%;
+    transform: translate(50%, 50%); */
+/* margin: -4% 0% 0% 0%; */
 
 
     /* position: absolute;
@@ -744,21 +770,108 @@ margin: -5% 0% 0% 0%;;
 }
 
 
-@media only screen and (max-width: 1366px) {
+.sec-2 .div-center{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.sec-2 .div-center .div-center-content {
+    margin-top: 100%;
+    color: white;
+}
+
+.sec-2 .div-center .div-center-content h3{
+    font-size: 100px;
+}
+
+/* screen 1440 */
+
+@media only screen and (max-width: 1440px) {
    
-    .sec-2 .div-top .div-text{
-    
-        margin: 0% 0% -4.5% 0%;;
-          
-    }    
-
-
-    .sec-2 .div-bottom .div-text{
-    margin: -5% 0% 0% 0%;;
-    
+    .sec-2 .div-top .div-text {
+        top: 16%;
     }
+
+    .sec-2 .div-bottom .div-text {
+        bottom: 16%;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 1366px) {
+   
+    .sec-2 .div-top .div-text {
+        top: 60%;
+    }
+
+    .sec-2 .div-bottom .div-text {
+        bottom: 60%;
+    }
+
+  }
+
+
+
+
+
+  /* Goto Top Button */
+
+  #go-top{
+
+    display: none;
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: transparent;
+    font-family: 'Bebas Neue', sans-serif;
+    border: 4px solid white;
+    color: white;
+    mix-blend-mode: difference;
+    
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 105;
+width: 50px;
+height: 50px;
+border-radius: 100%;
 
 
   }
 
+
+
+
+
+  
+
+  .d-block{
+    display: block !important;
+animation-name: top-btn;
+animation-duration: 2.5s;
+animation-delay: 0s;
+animation-fill-mode: both;
+
+  }
+
+
+@keyframes top-btn {
+
+    0%{
+        right: -100px;
+      transform:rotate(360deg);
+    }
+
+
+    100%{
+        right: 20px;
+        transform:rotate(0deg);}
+    
+}
 

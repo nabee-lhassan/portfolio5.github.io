@@ -1,3 +1,4 @@
+
 let tl = gsap.timeline({scrollTrigger:{
 
     trigger:".sec-2",
@@ -17,7 +18,7 @@ tl.to(".div-top",{
 },'a')
 
 tl.to(".div-text-1",{
-    marginTop:"50%",
+    marginTop:"20%",
 },'a')
 
 
@@ -27,39 +28,41 @@ tl.to(".div-bottom",{
 },'a')
 
 
-// gsap.to(".div-top",{
 
-//     scrollTrigger:{
-
-// trigger:".div-top",
-// markers:true,
-// start:"top 30%",
-
-// scrub:2,
-// pin:true,
-
-//     },
-
-//     top:"-100%",
-//     duration:5.5,
-//     delay:1,
-// }) 
+tl.to(".div-text-2",{
+    marginBottom:"20%",
+},'a')
 
 
-// gsap.to(".div-bottom",{
-
-//     scrollTrigger:{
-
-// trigger:".div-bottom",
-// scrub:true,
-// pin:true,
+tl.to(".div-center-content",{
+    marginTop:"0%",
+},'a')
 
 
-//     },
 
-//     bottom:"-100%",
-//     duration:5.5,
-//     delay:1,
-// }) 
+// scroll top btn
 
 
+// // Get a reference to the elements
+// const triggerElement = document.querySelector(".div-top");
+// const myElement = document.getElementById("go-top");
+
+// // Create a GSAP timeline for the animation
+// const animation = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: triggerElement, // The trigger element
+//     start: "top center",     // When to start the animation
+//     end: "bottom center",    // When to end the animation
+//     markers: true,           // Add markers for debugging (optional)
+//     toggleClass: "d-block",  // Class to add when entering the trigger area
+//     scrub: true,             // Smooth scrolling (optional)
+//   },
+// });
+
+// // Define your animation inside the timeline
+// animation.from(myElement, {
+//   opacity: 0.5,
+//   x: 100,
+//   duration: 2,
+//   ease: "power2.inOut",
+// });

@@ -70,6 +70,7 @@ sec_1.addEventListener("mousemove", function(e) {
 
 
 document.querySelector(".heading-name").style.position = "relative";
+
 document.querySelector(".heading-name").style.left = 1-(e.x * 0.02) + "px";
 document.querySelector(".heading-name").style.top = 1-(e.y * 0.02) + "px";
 
@@ -82,7 +83,7 @@ document.querySelector(".heading-last-name").style.top = (e.y * 0.02) + "px";
 
 // document.querySelector(".inner-cursor").style.transform = "scale(1.5)";
 // document.querySelector(".inner-cursor").style.opacity = "1";
-// document.querySelector(".cursor-effect").style.zIndex = "-1";
+document.querySelector(".cursor-effect").style.zIndex = "0";
 
 
 
@@ -136,39 +137,23 @@ colum_1.addEventListener("mouseout", function() {
 
 // section tow event start
 
-// sec_2.addEventListener("mousemove", function (e){
-
-// document.querySelector('.div-moon').style.display = "block";
-// document.querySelector('.div-moon').style.left =( e.x -390) + "px"
-// document.querySelector('.div-moon').style.top =( e.y -80) + "px"
-
-// })
-
-// sec_2.addEventListener("mouseleave", function (e){
-
-// document.querySelector('.div-moon').style.display = "none";
 
 
-// })
 
-
-// section tow event end
-
-
-// section three start
 
 
 let sec_2 = document.querySelector('.sec-2')
 
-window.addEventListener("scroll", function (e){
+sec_2.addEventListener("mousemove", function(e) {
 
-
-let y = window.screenY
-
-let a = document.querySelector('.heading-name');
-
-a.style.margin = y  + 'px';
-
-console.log(a)
+    document.querySelector(".cursor-effect").style.zIndex = "11";
+    
+    
+    
+    
 
 })
+
+
+
+
