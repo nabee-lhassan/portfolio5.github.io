@@ -40,6 +40,45 @@ tl.to(".div-center-content",{
 
 
 
+
+// ********** section three animation
+
+let tl_2 = gsap.timeline({scrollTrigger:{
+
+    trigger:".sec-3",
+    // markers:true,
+    start:"50% 50%",
+    end:"100% 50%",
+    
+    scrub:2,
+    pin:true,
+
+
+}})
+
+
+tl_2.to(".bg-image-main-1",{
+    top:"-320%",
+    
+},'a')
+
+tl_2.to(".bg-image",{
+    
+    display:"block",    
+},'a')
+
+
+tl_2.to(".bg-image-main-2",{
+    bottom:"-300%",
+    opacity:1,
+},'a')
+
+
+
+
+
+
+
 // scroll top btn
 
 
