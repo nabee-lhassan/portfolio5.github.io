@@ -8,7 +8,7 @@
     position: fixed;
     /* transition: all linear  0.1s;  */
     z-index: 0;
-    box-shadow: 0px 0px 48px 15px white;
+    /* box-shadow: 0px 0px 48px 15px white; */
     mix-blend-mode: difference;
     display: none;
 }
@@ -405,6 +405,7 @@ position: relative;
 z-index: 0;
 display: flex;
 flex-direction: column;
+justify-content: center;
 align-items: center;
 cursor: context-menu;
 overflow: hidden;
@@ -678,7 +679,7 @@ z-index: 1;
 
 .sec-2{
     
-    background-color: rgb(0, 0, 0);
+    background-color:black;
     width: 100vw;
     height: 100vh;
 position: relative;
@@ -736,6 +737,159 @@ display: flex;
     background-color: rgb(8, 8, 8);
     width: 100vw;
     height: 100vh;
+    /* position: relative; */
+}
+
+
+.sec-2 .div-center .sec-2-colum {
+    text-align: center;
+    border: 1px solid white;
+    margin: 10px;
+    position: relative;
+ z-index: 110;  
+ overflow: hidden;
+ height: 40vh;
+}
+
+
+.sec-2 .div-center .sec-2-colum::before{
+
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    top: 0%;
+    left: 0%;
+    background-color:white;
+    transition: 0.5s;
+    z-index: -1;
+    
+
+}
+
+
+
+
+
+
+
+
+
+.sec-2 .div-center{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    
+    .sec-2 .div-center .div-center-content {
+        margin-top: 100%;
+        color: white;
+        width: 50%;
+        
+    }
+    
+    .sec-2 .div-center .div-center-content h3{
+        font-size: 100px;
+        text-align: center;
+    }
+    
+    .sec-2 .div-center .div-center-content h4{
+    margin: 0;
+        mix-blend-mode: difference;
+    }
+    .sec-2 .div-center .div-center-content p{
+    
+        mix-blend-mode: difference;
+    }
+    
+    .sec-2 .div-center .div-center-content ul{
+    
+        list-style: none;
+        color: rgb(253, 253, 253);
+        mix-blend-mode: difference;
+    }
+    
+    .sec-2 .div-center .div-center-content .colum-1{
+        background-color: white;
+        border-radius: 10px;
+    
+    }
+
+
+
+
+
+.sec-2 .div-center .div-star-1{
+position: absolute;
+top: 20%;
+background-color: white;
+width: 300px;
+box-shadow: 0px 0px 12px 0px white;
+height: 2px;
+/* z-index: -1; */
+border-radius: 100%;
+animation-name: star-1;
+animation-duration: 1.5s;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+animation-fill-mode: both;
+
+}
+
+@keyframes star-1 {
+
+    0%{left: -100%;}
+    50%{left: 120%;}
+    100%{left: 120%;}
+    
+}
+
+
+.sec-2 .div-center .div-star-2{
+position: absolute;
+top: 50%;
+left: 20%;
+background-color: rgb(255, 255, 255);
+height: 200px;
+box-shadow: 0px 0px 12px 0px white;
+width: 2px;
+/* z-index: -1; */
+border-radius: 100%;
+animation-name: star-2;
+animation-duration: 2.7s;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+animation-fill-mode: both;
+
+}
+
+@keyframes star-2 {
+
+    0%{
+        top: -100%;
+        /* left: -100%; */
+    }
+    25%{
+        top: 120%;
+        /* left: 120%; */
+    
+    }
+    50%{
+        top:120%;
+        /* left: 120%; */
+    }
+
+    75%{
+        top: -100%;
+        /* left: -100%; */
+    }
+    100%{
+        top: 120%;
+        /* left: 120%; */
+    }
+    
 }
 
 .sec-2 .div-bottom{
@@ -770,22 +924,7 @@ display: flex;
 }
 
 
-.sec-2 .div-center{
 
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-.sec-2 .div-center .div-center-content {
-    margin-top: 100%;
-    color: white;
-}
-
-.sec-2 .div-center .div-center-content h3{
-    font-size: 100px;
-}
 
 /* screen 1440 */
 
@@ -814,6 +953,120 @@ align-items: center;
 
   }
 
+
+
+  /* ***************** Section Three ***************** */
+
+  .sec-3 {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+   
+    overflow: hidden;
+    /* transform: scale(1.2); */
+}
+
+.sec-3 .div-main-slider {
+
+    width: 100%;
+    height: 100%;
+    /* transform: rotate(-10deg)  !important; */
+    display: flex;
+    justify-content: space-around;
+    
+    overflow: hidden;
+    /* background-color: rgb(34, 34, 34); */
+    transform: rotate(-7deg);
+     /* position: fixed; */
+     top: 0%;
+     left: 0%;
+}
+
+.sec-3 .div-main-slider .my-colum {
+    width: 24%;
+    height: 100%;
+    /* background-color: gray; */
+    position: relative;
+
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image-main {
+    width: 100%;
+    position: absolute;
+    /* top: 0%; */
+    left: 0%;
+    
+    
+
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image-main-1{
+    top: 100%;
+}
+
+
+.sec-3 .div-main-slider .my-colum .bg-image-main-2{
+    bottom: 100%;
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image {
+
+    width: 100%;
+    height: 300px;
+    margin: 20px 0px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px 3px gray;
+    background-size: cover;
+    background-position: top;
+    /* -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); */
+transition: 3.5s;
+}
+.sec-3 .div-main-slider .my-colum .bg-image:hover {
+    /* filter: grayscale(0%); */
+    background-position: bottom;
+
+
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image-1 {
+   background-image: url(./image/hemitelent.png);
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image-2 {
+    background-image: url(./image/gibbes.png);
+    background-position: top left;
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image-3 {
+   
+    background-image: url(./image/codelabs-live.png);
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image-4 {
+   
+    background-image: url(./image/Construction.png);
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image-5 {
+   
+    background-image: url(./image/emphasizemedispa.png);
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image-6 {
+    
+    background-image: url(./image/enjoypeetz.png);
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image-7 {
+    
+    background-image: url(./image/landmerchantsusa.png);
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image-8 {
+    
+    background-image: url(./image/noforceclose.png);
+}
 
 
 
@@ -875,3 +1128,9 @@ animation-fill-mode: both;
     
 }
 
+
+.sec-4{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
