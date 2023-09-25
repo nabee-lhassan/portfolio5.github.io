@@ -50,7 +50,7 @@ let tl_2 = gsap.timeline({scrollTrigger:{
     start:"50% 50%",
     end:"100% 50%",
     
-    scrub:2,
+    scrub:4,
     pin:true,
 
 
