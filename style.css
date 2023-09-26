@@ -746,7 +746,7 @@ display: flex;
     border: 1px solid white;
     margin: 10px;
     position: relative;
- z-index: 110;  
+ z-index: 1;  
  overflow: hidden;
  height: 40vh;
 }
@@ -903,6 +903,7 @@ overflow: hidden;
 display: flex;
     justify-content: center;
     align-items: start;
+    z-index: 2;
 }
 
 
@@ -1030,42 +1031,52 @@ transition: 3.5s;
 }
 
 .sec-3 .div-main-slider .my-colum .bg-image-1 {
-   background-image: url(./image/hemitelent.png);
+   background-image: url(./image/hemitelent.webp);
 }
 
 .sec-3 .div-main-slider .my-colum .bg-image-2 {
-    background-image: url(./image/gibbes.png);
-    background-position: top left;
+    background-image: url(./image/codelabs-live.webp);
+    
 }
 
 .sec-3 .div-main-slider .my-colum .bg-image-3 {
    
-    background-image: url(./image/codelabs-live.png);
+    background-image: url(./image/Construction.webp);
 }
 
 .sec-3 .div-main-slider .my-colum .bg-image-4 {
    
-    background-image: url(./image/Construction.png);
+    background-image: url(./image/emphasizemedispa.webp);
 }
 
 .sec-3 .div-main-slider .my-colum .bg-image-5 {
    
-    background-image: url(./image/emphasizemedispa.png);
+    background-image: url(./image/gibbes.webp);
+    background-position: top left;
 }
 
 .sec-3 .div-main-slider .my-colum .bg-image-6 {
     
-    background-image: url(./image/enjoypeetz.png);
+    background-image: url(./image/skymoving.webp);
 }
 
 .sec-3 .div-main-slider .my-colum .bg-image-7 {
     
-    background-image: url(./image/landmerchantsusa.png);
+    background-image: url(./image/popsociable.webp);
 }
 
 .sec-3 .div-main-slider .my-colum .bg-image-8 {
     
-    background-image: url(./image/noforceclose.png);
+    background-image: url(./image/noforceclose.webp);
+}
+.sec-3 .div-main-slider .my-colum .bg-image-9 {
+    
+    background-image: url(./image/screencapture-tracyweinerlaw-2023-09-24-02_45_12.webp);
+}
+
+.sec-3 .div-main-slider .my-colum .bg-image-10 {
+    
+    background-image: url(./image/landmerchantsusa.webp);
 }
 
 
